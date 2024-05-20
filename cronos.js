@@ -93,7 +93,7 @@ var libmean = {AL: 0.04, AK: 0.06, AZ: 0.12, AR: 0.19, CA: 0.15, CO: 0.12, CT: 0
 
 // Estatísticas do Simulador
 var particao = 100
-var desvio = 0.05
+var desvio = 0.08
 var desviador = Math.sqrt(particao)
 
 // Estilo
