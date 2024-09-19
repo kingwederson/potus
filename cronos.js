@@ -87,13 +87,16 @@ function gauss(mean, stdev) {
 }
 // Estatísticas
 var pop = {AL: 2123372, AK: 318608, AZ: 2604657, AR: 1130676, CA: 14181595, CO: 2780247, CT: 1644920, DE: 443814, DC: 311268, FL: 11067456, GA: 4114732, HI: 428937, ID: 690255, IL: 5536424, IN: 2734958, IA: 1566031, KS: 1184402, KY: 1924149, LA: 2029032, ME: 747927, MD: 2781446, MA: 3325046, MI: 4799284, MN: 2944813, MS: 1209357, MO: 2808605, MT: 497147, NE: 844227, NV: 1125385, NH: 744296, NJ: 3874046, NM: 798319, NY: 7721453, NC: 4741564, ND: 344360, OH: 5922202, OK: 1452992, OR: 2001336, PA: 6165478, RI: 464144, SC: 2103027, SD: 370093, TN: 2508027, TX: 11315056, UT: 1131430, VT: 315067, VA: 3984631, WA: 3317019, WV: 714423, WI: 2976150, WY: 255849};
-var demmean = {AL: 0.36, AK: 0.36, AZ: 0.50, AR: 0.36, CA: 0.63, CO: 0.56, CT: 0.59, DE: 0.59, DC: 0.88, FL: 0.48, GA: 0.50, HI: 0.64, ID: 0.34, IL: 0.58, IN: 0.41, IA: 0.45, KS: 0.424, KY: 0.368, LA: 0.3845, ME: 0.546, MD: 0.6033, MA: 0.6001, MI: 0.510, MN: 0.534, MS: 0.4006, MO: 0.3814, MT: 0.3575, NE: 0.3370, NV: 0.505, NH: 0.53, NJ: 0.5545, NM: 0.4826, NY: 0.5901, NC: 0.4617, ND: 0.2723, OH: 0.4524, OK: 0.2893, OR: 0.5007, PA: 0.50, RI: 0.5441, SC: 0.4067, SD: 0.3174, TN: 0.3472, TX: 0.4648, UT: 0.2746, VT: 0.5668, VA: 0.54, WA: 0.5254, WV: 0.2643, WI: 0.51, WY: 0.2188};
-var repmean = {AL: 0.63, AK: 0.63, AZ: 0.49, AR: 0.63, CA: 0.36, CO: 0.43, CT: 0.40, DE: 0.41, DC: 0.06, FL: 0.51, GA: 0.50, HI: 0.35, ID: 0.65, IL: 0.41, IN: 0.58, IA: 0.54, KS: 0.576, KY: 0.632, LA: 0.5809, ME: 0.454, MD: 0.3391, MA: 0.3281, MI: 0.490, MN: 0.466, MS: 0.5786, MO: 0.5677, MT: 0.5617, NE: 0.5875, NV: 0.495, NH: 0.47, NJ: 0.4135, NM: 0.4004, NY: 0.3652, NC: 0.4983, ND: 0.6296, OH: 0.5327, OK: 0.6532, OR: 0.3909, PA: 0.50, RI: 0.3890, SC: 0.5494, SD: 0.6153, TN: 0.6072, TX: 0.5206, UT: 0.4554, VT: 0.3027, VA: 0.46, WA: 0.3683, WV: 0.685, WI: 0.49, WY: 0.6817};
-var libmean = {AL: 0.01, AK: 0.01, AZ: 0.01, AR: 0.01, CA: 0.01, CO: 0.01, CT: 0.01, DE: 0.00, DC: 0.06, FL: 0.01, GA: 0.00, HI: 0.01, ID: 0.01, IL: 0.01, IN: 0.01, IA: 0.01, KS: 0.000, KY: 0.000, LA: 0.0187, ME: 0.000, MD: 0.0286, MA: 0.0415, MI: 0.000, MN: 0.000, MS: 0.0119, MO: 0.0347, MT: 0.0564, NE: 0.0461, NV: 0.000, NH: 0.04, NJ: 0.0187, NM: 0.0934, NY: 0.0229, NC: 0.0274, ND: 0.0622, OH: 0.0149, OK: 0.0575, OR: 0.0471, PA: 0.02, RI: 0.0318, SC: 0.0234, SD: 0.0563, TN: 0.0281, TX: 0.0146, UT: 0.0350, VT: 0.0320, VA: 0.03, WA: 0.0485, WV: 0.0322, WI: 0.03, WY: 0.0519};
+
+var demmean = {AL: 0.36, AK: 0.36, AZ: 0.469, AR: 0.36, CA: 0.63, CO: 0.56, CT: 0.59, DE: 0.59, DC: 0.88, FL: 0.458, GA: 0.460, HI: 0.64, ID: 0.34, IL: 0.58, IN: 0.41, IA: 0.45, KS: 0.424, KY: 0.368, LA: 0.3845, ME: 0.546, MD: 0.626, MA: 0.6001, MI: 0.493, MN: 0.501, MS: 0.4006, MO: 0.426, MT: 0.397, NE: 0.3370, NV: 0.470, NH: 0.513, NJ: 0.5545, NM: 0.497, NY: 0.5901, NC: 0.477, ND: 0.2723, OH: 0.438, OK: 0.2893, OR: 0.5007, PA: 0.481, RI: 0.5441, SC: 0.4067, SD: 0.3174, TN: 0.3472, TX: 0.430, UT: 0.2746, VT: 0.5668, VA: 0.500, WA: 0.534, WV: 0.2643, WI: 0.493, WY: 0.2188};
+
+var repmean = {AL: 0.63, AK: 0.63, AZ: 0.479, AR: 0.63, CA: 0.36, CO: 0.43, CT: 0.40, DE: 0.41, DC: 0.06, FL: 0.499, GA: 0.480, HI: 0.35, ID: 0.65, IL: 0.41, IN: 0.58, IA: 0.54, KS: 0.576, KY: 0.632, LA: 0.5809, ME: 0.454, MD: 0.334, MA: 0.3281, MI: 0.476, MN: 0.440, MS: 0.5786, MO: 0.541, MT: 0.567, NE: 0.5875, NV: 0.468, NH: 0.444, NJ: 0.4135, NM: 0.415, NY: 0.3652, NC: 0.479, ND: 0.6296, OH: 0.523, OK: 0.6532, OR: 0.3909, PA: 0.480, RI: 0.3890, SC: 0.5494, SD: 0.6153, TN: 0.6072, TX: 0.503, UT: 0.4554, VT: 0.3027, VA: 0.420, WA: 0.358, WV: 0.685, WI: 0.481, WY: 0.6817};
+
+var libmean = {AL: 0.01, AK: 0.01, AZ: 0.01, AR: 0.01, CA: 0.01, CO: 0.01, CT: 0.01, DE: 0.00, DC: 0.06, FL: 0.01, GA: 0.00, HI: 0.01, ID: 0.01, IL: 0.01, IN: 0.01, IA: 0.01, KS: 0.000, KY: 0.000, LA: 0.0187, ME: 0.000, MD: 0.0286, MA: 0.0415, MI: 0.000, MN: 0.000, MS: 0.01, MO: 0.0347, MT: 0.0564, NE: 0.0461, NV: 0.000, NH: 0.04, NJ: 0.0187, NM: -0.02, NY: 0.0229, NC: 0.0274, ND: -0.02, OH: -0.02, OK: -0.02, OR: -0.02, PA: -0.02, RI: -0.02, SC: -0.02, SD: -0.02, TN: -0.02, TX: 0.015, UT: 0.035, VT: -0.02, VA: -0.02, WA: -0.02, WV: -0.02, WI: -0.02, WY: -0.02};
 
 // Estatísticas do Simulador
 var particao = 100
-var desvio = 0.08
+var desvio = 0.05
 var desviador = Math.sqrt(particao)
 
 // Estilo
@@ -514,8 +517,8 @@ function votar(){
                 vetorEstado[11].style.fill = repcolor;
                 if(zzzMEvotes+demMEvotes<repMEvotes/chamada && zzzMEvotes+libMEvotes<repMEvotes/chamada){
                     vetorEstado[11].style.fill = repcolorforte;
-                    evRinME = evME
                     evDinME = 0
+                    evRinME = evME
                 }
             }else{
                 vetorEstado[11].style.fill = libcolor;
@@ -535,10 +538,10 @@ function votar(){
                 clearInterval(votaME)
                 if(demMEvotes>repMEvotes){
                     vetorEstado[11].style.fill = demcolorforte;
-                    evDinMI = evME
+                    evDinME = evME
                 }else if(repMIvotes>demMIvotes){
                     vetorEstado[11].style.fill = repcolorforte;
-                    evRinMI = evME
+                    evRinME = evME
                 }
             }
 
@@ -577,8 +580,8 @@ function votar(){
                 vetorEstado[18].style.fill = repcolor;
                 if(zzzNHvotes+demNHvotes<repNHvotes/chamada && zzzNHvotes+libNHvotes<repNHvotes/chamada){
                     vetorEstado[18].style.fill = repcolorforte;
-                    evRinNH = evNH
                     evDinNH = 0
+                    evRinNH = evNH
                 }
             }else{
                 vetorEstado[18].style.fill = libcolor;
@@ -912,8 +915,8 @@ function votar(){
                 vetorEstado[26].style.fill = repcolor;
                 if(zzzPAvotes+demPAvotes<repPAvotes/chamada && zzzPAvotes+libPAvotes<repPAvotes/chamada){
                     vetorEstado[26].style.fill = repcolorforte;
-                    evRinPA = evPA
                     evDinPA = 0
+                    evRinPA = evPA
                 }
             }else{
                 vetorEstado[26].style.fill = libcolor;
@@ -1137,8 +1140,8 @@ function votar(){
                 vetorEstado[34].style.fill = repcolor;
                 if(zzzFLvotes+demFLvotes<repFLvotes/chamada && zzzFLvotes+libFLvotes<repFLvotes/chamada){
                     vetorEstado[34].style.fill = repcolorforte;
-                    evRinFL = evFL
                     evDinFL = 0
+                    evRinFL = evFL
                 }
             }else{
                 vetorEstado[34].style.fill = libcolor;
@@ -1210,6 +1213,16 @@ function votar(){
     
             if(VApercentin==100){
                 clearInterval(votaVA)
+                //Evitar recontagem e indefinição na Virginia
+                if(demVAvotes>repVAvotes){
+                    vetorEstado[19].style.fill = demcolorforte;
+                    evDinVA = evGA
+                    evRinVA = 0
+                }else{
+                    vetorEstado[19].style.fill = repcolorforte;
+                    evDinVA = 0
+                    evRinVA = evVA
+                }
             }
     
         },percentintempo)
@@ -1679,8 +1692,8 @@ function votar(){
                 vetorEstado[36].style.fill = repcolor;
                 if(zzzMIvotes+demMIvotes<repMIvotes/chamada && zzzMIvotes+libMIvotes<repMIvotes/chamada){
                     vetorEstado[36].style.fill = repcolorforte;
-                    evRinMI = evMI
                     evDinMI = 0
+                    evRinMI = evMI
                 }
             }else{
                 vetorEstado[36].style.fill = libcolor;
@@ -1702,7 +1715,7 @@ function votar(){
                     vetorEstado[36].style.fill = demcolorforte;
                     evDinMI = evMI
                     evRinMI = 0
-                }else if(repMIvotes>demMIvotes){
+                }else{
                     vetorEstado[36].style.fill = repcolorforte;
                     evRinMI = evMI
                     evDinMI = 0
@@ -1798,8 +1811,8 @@ function votar(){
                 vetorEstado[38].style.fill = repcolor;
                 if(zzzWIvotes+demWIvotes<repWIvotes/chamada && zzzWIvotes+libWIvotes<repWIvotes/chamada){
                     vetorEstado[38].style.fill = repcolorforte;
-                    evRinWI = evWI
                     evDinWI = 0
+                    evRinWI = evWI
                 }
             }else{
                 vetorEstado[38].style.fill = libcolor;
@@ -1820,7 +1833,7 @@ function votar(){
                 if(demWIvotes>repWIvotes){
                     vetorEstado[38].style.fill = demcolorforte;
                     evDinWI = evWI
-                }else if(repWIvotes>demWIvotes){
+                }else{
                     vetorEstado[38].style.fill = repcolorforte;
                     evRinWI = evWI
                 }
@@ -2022,8 +2035,8 @@ function votar(){
                 vetorEstado[39].style.fill = repcolor;
                 if(zzzMNvotes+demMNvotes<repMNvotes/chamada && zzzMNvotes+libMNvotes<repMNvotes/chamada){
                     vetorEstado[39].style.fill = repcolorforte;
-                    evRinMN = evMN
                     evDinMN = 0
+                    evRinMN = evMN
                 }
             }else{
                 vetorEstado[39].style.fill = libcolor;
@@ -2102,6 +2115,18 @@ function votar(){
     
             if(NMpercentin==100){
                 clearInterval(votaNM)
+                
+                //Evitar recontagem e indefinição em New Mexico
+                
+                if(demNMvotes>repNMvotes){
+                    vetorEstado[40].style.fill = demcolorforte;
+                    evDinNM = evGA
+                    evRinNM = 0
+                }else{
+                    vetorEstado[40].style.fill = repcolorforte;
+                    evDinNM = 0
+                    evRinNM 
+                }
             }
     
         },percentintempo)
@@ -2161,7 +2186,7 @@ function votar(){
                 if(demAZvotes>repAZvotes){
                     vetorEstado[47].style.fill = demcolorforte;
                     evDinAZ = evAZ
-                }else if(repAZvotes>demAZvotes){
+                }else{
                     vetorEstado[47].style.fill = repcolorforte;
                     evRinAZ = evAZ
                 }
@@ -2196,11 +2221,13 @@ function votar(){
                 if(zzzNVvotes+repNVvotes<demNVvotes/chamada && zzzNVvotes+libNVvotes<demNVvotes/chamada){
                     vetorEstado[48].style.fill = demcolorforte;
                     evDinNV = evNV
+                    evRinNV = 0
                 }
             }else if(repNVvotes>demNVvotes && repNVvotes>libNVvotes){
                 vetorEstado[48].style.fill = repcolor;
                 if(zzzNVvotes+demNVvotes<repNVvotes/chamada && zzzNVvotes+libNVvotes<repNVvotes/chamada){
                     vetorEstado[48].style.fill = repcolorforte;
+                    evDinNV = 0
                     evRinNV = evNV
                 }
             }else{
@@ -2696,11 +2723,13 @@ setTimeout(function(){
             if(zzzAKvotes+repAKvotes<demAKvotes/chamada && zzzAKvotes+libAKvotes<demAKvotes/chamada){
                 vetorEstado[50].style.fill = demcolorforte;
                 evDinAK = evAK
+                evRinAK = 0
             }
         }else if(repAKvotes>demAKvotes && repAKvotes>libAKvotes){
             vetorEstado[50].style.fill = repcolor;
             if(zzzAKvotes+demAKvotes<repAKvotes/chamada && zzzAKvotes+libAKvotes<repAKvotes/chamada){
                 vetorEstado[50].style.fill = repcolorforte;
+                evDinAK = 0
                 evRinAK = evAK
             }
         }else{
@@ -2722,7 +2751,7 @@ setTimeout(function(){
         }
 
     },percentintempo)
-},90*percentintempo)
+},70*percentintempo)
 
 setTimeout(function(){
     contest = evHI
@@ -2750,11 +2779,13 @@ setTimeout(function(){
             if(zzzHIvotes+repHIvotes<demHIvotes/chamada && zzzHIvotes+libHIvotes<demHIvotes/chamada){
                 vetorEstado[49].style.fill = demcolorforte;
                 evDinHI = evHI
+                evRinHI = 0
             }
         }else if(repHIvotes>demHIvotes && repHIvotes>libHIvotes){
             vetorEstado[49].style.fill = repcolor;
             if(zzzHIvotes+demHIvotes<repHIvotes/chamada && zzzHIvotes+libHIvotes<repHIvotes/chamada){
                 vetorEstado[49].style.fill = repcolorforte;
+                evDinHI = 0
                 evRinHI = evHI
             }
         }else{
@@ -2776,7 +2807,7 @@ setTimeout(function(){
         }
 
     },percentintempo)
-},88*percentintempo)
+},70*percentintempo)
 
     setTimeout(function(){
         contest = evNC
@@ -2804,11 +2835,13 @@ setTimeout(function(){
                 if(zzzNCvotes+repNCvotes<demNCvotes/chamada && zzzNCvotes+libNCvotes<demNCvotes/chamada){
                     vetorEstado[23].style.fill = demcolorforte;
                     evDinNC = evNC
+                    evRinNC = 0
                 }
             }else if(repNCvotes>demNCvotes && repNCvotes>libNCvotes){
                 vetorEstado[23].style.fill = repcolor;
                 if(zzzNCvotes+demNCvotes<repNCvotes/chamada && zzzNCvotes+libNCvotes<repNCvotes/chamada){
                     vetorEstado[23].style.fill = repcolorforte;
+                    evDinNC = 0
                     evRinNC = evNC
                 }
             }else{
@@ -2827,6 +2860,15 @@ setTimeout(function(){
     
             if(NCpercentin==100){
                 clearInterval(votaNC)
+                if(demNCvotes>repNCvotes){
+                    vetorEstado[23].style.fill = demcolorforte;
+                    evDinNC = evNC
+                    evRinNC = 0
+                }else{
+                    vetorEstado[23].style.fill = repcolorforte;
+                    evDinNC = 0
+                    evRinNC = evNC
+                }
             }
     
         },percentintempo)
@@ -2858,11 +2900,13 @@ setTimeout(function(){
                 if(zzzSCvotes+repSCvotes<demSCvotes/chamada && zzzSCvotes+libSCvotes<demSCvotes/chamada){
                     vetorEstado[15].style.fill = demcolorforte;
                     evDinSC = evSC
+                    evRinSC = 0
                 }
             }else if(repSCvotes>demSCvotes && repSCvotes>libSCvotes){
                 vetorEstado[15].style.fill = repcolor;
                 if(zzzSCvotes+demSCvotes<repSCvotes/chamada && zzzSCvotes+libSCvotes<repSCvotes/chamada){
                     vetorEstado[15].style.fill = repcolorforte;
+                    evDinSC = 0
                     evRinSC = evSC
                 }
             }else{
@@ -2912,14 +2956,16 @@ setTimeout(function(){
                 if(zzzGAvotes+repGAvotes<demGAvotes/chamada && zzzGAvotes+libGAvotes<demGAvotes/chamada){
                     vetorEstado[30].style.fill = demcolorforte;
                     evDinGA = evGA
+                    evRinGA = 0
                 }
             }else if(repGAvotes>demGAvotes && repGAvotes>libGAvotes){
                 vetorEstado[30].style.fill = repcolor;
                 if(zzzGAvotes+demGAvotes<repGAvotes/chamada && zzzGAvotes+libGAvotes<repGAvotes/chamada){
                     vetorEstado[30].style.fill = repcolorforte;
+                    evDinGA = 0
                     evRinGA = evGA
                 }
-            }else{
+            }else {
                 vetorEstado[30].style.fill = libcolor;
             }
     
@@ -2935,6 +2981,15 @@ setTimeout(function(){
     
             if(GApercentin==100){
                 clearInterval(votaGA)
+                if(demGAvotes>repGAvotes){
+                    vetorEstado[30].style.fill = demcolorforte;
+                    evDinGA = evGA
+                    evRinGA = 0
+                }else{
+                    vetorEstado[30].style.fill = repcolorforte;
+                    evDinGA = 0
+                    evRinGA = evGA
+                }
             }
     
         },percentintempo)
