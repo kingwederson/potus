@@ -1,5 +1,5 @@
 // Tempo
-var percentintempo = 500
+var percentintempo = 750
 
 // Colégio Eleitoral
 var estado = 0
