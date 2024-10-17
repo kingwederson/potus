@@ -71,3 +71,7 @@ g#alabama:hover ~ tr#alabamatr{
 .dispostos{
     display:contents;
 }
+img.counterimg{
+    height: 5mm;
+    width:auto;
+}

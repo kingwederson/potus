@@ -1,5 +1,5 @@
 // Tempo
-var percentintempo = 1000
+var percentintempo = 500
 
 // Colégio Eleitoral
 var estado = 0
@@ -88,11 +88,11 @@ function gauss(mean, stdev) {
 // Estatísticas
 var pop = {AL: 2123372, AK: 318608, AZ: 2604657, AR: 1130676, CA: 14181595, CO: 2780247, CT: 1644920, DE: 443814, DC: 311268, FL: 11067456, GA: 4114732, HI: 428937, ID: 690255, IL: 5536424, IN: 2734958, IA: 1566031, KS: 1184402, KY: 1924149, LA: 2029032, ME: 747927, MD: 2781446, MA: 3325046, MI: 4799284, MN: 2944813, MS: 1209357, MO: 2808605, MT: 497147, NE: 844227, NV: 1125385, NH: 744296, NJ: 3874046, NM: 798319, NY: 7721453, NC: 4741564, ND: 344360, OH: 5922202, OK: 1452992, OR: 2001336, PA: 6165478, RI: 464144, SC: 2103027, SD: 370093, TN: 2508027, TX: 11315056, UT: 1131430, VT: 315067, VA: 3984631, WA: 3317019, WV: 714423, WI: 2976150, WY: 255849};
 
-var demmean = {AL: 0.36, AK: 0.36, AZ: 0.469, AR: 0.36, CA: 0.63, CO: 0.56, CT: 0.59, DE: 0.59, DC: 0.88, FL: 0.458, GA: 0.460, HI: 0.64, ID: 0.34, IL: 0.58, IN: 0.41, IA: 0.45, KS: 0.424, KY: 0.368, LA: 0.3845, ME: 0.546, MD: 0.626, MA: 0.6001, MI: 0.493, MN: 0.501, MS: 0.4006, MO: 0.426, MT: 0.397, NE: 0.3370, NV: 0.470, NH: 0.513, NJ: 0.5545, NM: 0.497, NY: 0.5901, NC: 0.477, ND: 0.2723, OH: 0.438, OK: 0.2893, OR: 0.5007, PA: 0.481, RI: 0.5441, SC: 0.4067, SD: 0.3174, TN: 0.3472, TX: 0.430, UT: 0.2746, VT: 0.5668, VA: 0.500, WA: 0.534, WV: 0.2643, WI: 0.493, WY: 0.2188};
+var demmean = {AL: 0.36, AK: 0.400, AZ: 0.472, AR: 0.36, CA: 0.590, CO: 0.530, CT: 0.570, DE: 0.550, DC: 0.88, FL: 0.446, GA: 0.477, HI: 0.64, ID: 0.34, IL: 0.58, IN: 0.395, IA: 0.440, KS: 0.424, KY: 0.368, LA: 0.3845, ME: 0.540, MD: 0.624, MA: 0.605, MI: 0.478, MN: 0.498, MS: 0.4006, MO: 0.420, MT: 0.390, NE: 0.370, NV: 0.468, NH: 0.517, NJ: 0.5545, NM: 0.495, NY: 0.545, NC: 0.474, ND: 0.320, OH: 0.448, OK: 0.400, OR: 0.490, PA: 0.479, RI: 0.570, SC: 0.420, SD: 0.3174, TN: 0.350, TX: 0.454, UT: 0.380, VT: 0.700, VA: 0.500, WA: 0.570, WV: 0.340, WI: 0.480, WY: 0.2188};
 
-var repmean = {AL: 0.63, AK: 0.63, AZ: 0.479, AR: 0.63, CA: 0.36, CO: 0.43, CT: 0.40, DE: 0.41, DC: 0.06, FL: 0.499, GA: 0.480, HI: 0.35, ID: 0.65, IL: 0.41, IN: 0.58, IA: 0.54, KS: 0.576, KY: 0.632, LA: 0.5809, ME: 0.454, MD: 0.334, MA: 0.3281, MI: 0.476, MN: 0.440, MS: 0.5786, MO: 0.541, MT: 0.567, NE: 0.5875, NV: 0.468, NH: 0.444, NJ: 0.4135, NM: 0.415, NY: 0.3652, NC: 0.479, ND: 0.6296, OH: 0.523, OK: 0.6532, OR: 0.3909, PA: 0.480, RI: 0.3890, SC: 0.5494, SD: 0.6153, TN: 0.6072, TX: 0.503, UT: 0.4554, VT: 0.3027, VA: 0.420, WA: 0.358, WV: 0.685, WI: 0.481, WY: 0.6817};
+var repmean = {AL: 0.63, AK: 0.550, AZ: 0.482, AR: 0.63, CA: 0.343, CO: 0.420, CT: 0.410, DE: 0.365, DC: 0.06, FL: 0.510, GA: 0.490, HI: 0.35, ID: 0.65, IL: 0.41, IN: 0.560, IA: 0.490, KS: 0.576, KY: 0.632, LA: 0.5809, ME: 0.410, MD: 0.326, MA: 0.320, MI: 0.478, MN: 0.433, MS: 0.5786, MO: 0.535, MT: 0.580, NE: 0.540, NV: 0.468, NH: 0.427, NJ: 0.4135, NM: 0.435, NY: 0.410, NC: 0.479, ND: 0.590, OH: 0.512, OK: 0.560, OR: 0.440, PA: 0.476, RI: 0.405, SC: 0.520, SD: 0.6153, TN: 0.560, TX: 0.508, UT: 0.540, VT: 0.290, VA: 0.424, WA: 0.335, WV: 0.610, WI: 0.487, WY: 0.6817};
 
-var libmean = {AL: 0.01, AK: 0.01, AZ: 0.01, AR: 0.01, CA: 0.01, CO: 0.01, CT: 0.01, DE: 0.00, DC: 0.06, FL: 0.01, GA: 0.00, HI: 0.01, ID: 0.01, IL: 0.01, IN: 0.01, IA: 0.01, KS: 0.000, KY: 0.000, LA: 0.0187, ME: 0.000, MD: 0.0286, MA: 0.0415, MI: 0.000, MN: 0.000, MS: 0.01, MO: 0.0347, MT: 0.0564, NE: 0.0461, NV: 0.000, NH: 0.04, NJ: 0.0187, NM: -0.02, NY: 0.0229, NC: 0.0274, ND: -0.02, OH: -0.02, OK: -0.02, OR: -0.02, PA: -0.02, RI: -0.02, SC: -0.02, SD: -0.02, TN: -0.02, TX: 0.015, UT: 0.035, VT: -0.02, VA: -0.02, WA: -0.02, WV: -0.02, WI: -0.02, WY: -0.02};
+var libmean = {AL: 0.01, AK: 0.050, AZ: 0.041, AR: 0.01, CA: 0.067, CO: 0.050, CT: 0.020, DE: 0.085, DC: 0.06, FL: 0.044, GA: 0.033, HI: 0.01, ID: 0.01, IL: 0.01, IN: 0.045, IA: 0.070, KS: 0.000, KY: 0.000, LA: 0.0187, ME: 0.050, MD: 0.050, MA: 0.075, MI: 0.044, MN: 0.069, MS: 0.01, MO: 0.045, MT: 0.030, NE: 0.090, NV: 0.064, NH: 0.056, NJ: 0.0187, NM: 0.070, NY: 0.045, NC: 0.047, ND: 0.090, OH: 0.040, OK: 0.040, OR: 0.070, PA: 0.045, RI: 0.025, SC: 0.060, SD: -0.02, TN: 0.090, TX: 0.038, UT: 0.080, VT: 0.010, VA: 0.076, WA: 0.095, WV: 0.050, WI: 0.033, WY: -0.02};
 
 // Estatísticas do Simulador
 var particao = 100
@@ -1216,7 +1216,7 @@ function votar(){
                 //Evitar recontagem e indefinição na Virginia
                 if(demVAvotes>repVAvotes){
                     vetorEstado[19].style.fill = demcolorforte;
-                    evDinVA = evGA
+                    evDinVA = evVA
                     evRinVA = 0
                 }else{
                     vetorEstado[19].style.fill = repcolorforte;
@@ -2120,12 +2120,12 @@ function votar(){
                 
                 if(demNMvotes>repNMvotes){
                     vetorEstado[40].style.fill = demcolorforte;
-                    evDinNM = evGA
+                    evDinNM = evNM
                     evRinNM = 0
                 }else{
                     vetorEstado[40].style.fill = repcolorforte;
                     evDinNM = 0
-                    evRinNM 
+                    evRinNM = evNM
                 }
             }
     
